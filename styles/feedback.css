@@ -1,0 +1,29 @@
+.feedback{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 15px;
+}
+.image-feedback{
+  margin-bottom: 30px;
+}
+
+.result-feedback{
+  color: rgb(251, 116, 19);
+  background-color: rgb(36, 47, 58);
+  padding: 6px 20px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.text-feedback{
+  text-align: center;
+}
+.text-feedback-title{
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.text-feedback-description{
+  color: rgb(149, 158, 172);
+}

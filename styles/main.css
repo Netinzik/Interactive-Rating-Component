@@ -1,0 +1,57 @@
+@import url('reset.css');
+@import url('custom-inputs.css');
+@import url('feedback.css');
+
+body{
+  background-color: rgb(18, 20, 23);
+}
+
+.rating-state-star{
+  background-color: rgb(27, 34, 44);
+  max-width: 440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.header-star{
+  background-color: rgb(36, 47, 58);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.rating-state-text{
+  color: rgb(255, 255, 255);
+  margin-top: 32px;
+}
+.rating-state-title{
+  padding-bottom: 15px;
+}
+.rating-state-description{
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.submit-button{
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(251, 116, 19);
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: none;
+  transition: color, background .4s ease-in-out;
+}
+.submit-button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(251, 116, 19);
+}
+.submit-button:active{
+  background-color: rgb(251, 116, 19);
+  color: rgb(255, 255, 255);
+}

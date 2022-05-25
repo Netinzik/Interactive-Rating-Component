@@ -1,49 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <section class="rating-state-star">
+        <div>
+          <img
+            class="header-star"
+            src="assets/images/icon-star.svg"
+            alt="Star"
+          />
+        </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+        <div class="rating-state-text">
+          <h1 class="rating-state-title">How did we do?</h1>
+          <p class="rating-state-description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <div class="rating-state-rating">
+          <div class="rating-state-inputs">
+            <input class="input-real" type="radio" id="1" name="rating" value="1" />
+            <div class="input-person">1</div>
+          </div>
+          <div class="rating-state-inputs">
+            <input class="input-real" type="radio" id="2" name="rating" value="2" />
+            <div class="input-person">2</div>
+          </div>
+          <div class="rating-state-inputs">
+            <input class="input-real" type="radio" id="3" name="rating" value="3" />
+            <div class="input-person">3</div>
+          </div>
+          <div class="rating-state-inputs">
+            <input class="input-real" type="radio" id="4" name="rating" value="4" />
+            <div class="input-person">4</div>
+          </div>
+          <div class="rating-state-inputs">
+            <input class="input-real" type="radio" id="5" name="rating" value="5" />
+            <div class="input-person">5</div>
+          </div>
+        </div>
 
-  <!-- Rating state start -->
+        <button class="submit-button" type="submit">Submit</button>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sebastião Neto</a>.
+    </div> -->
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
