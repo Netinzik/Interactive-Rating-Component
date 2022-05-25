@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var button = document.querySelector('.submit-button');
 
-  button.addEventListener('click', valor)
+  button.addEventListener('click', feedback)
 
-  function valor(){
+  function feedback(){
     var value = document.querySelector('.input-real:checked').value;
     var feedback_section = document.querySelector('.rating-state-star');
 

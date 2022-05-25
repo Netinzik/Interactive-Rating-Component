@@ -1,4 +1,4 @@
-.rating-state-rating{
+.rating-state-rating {
   margin: 30px 0;
   display: flex;
   justify-content: space-around;
@@ -6,24 +6,24 @@
 }
 
 .rating-state-inputs-real,
-.rating-state-inputs-fake{
+.rating-state-inputs-fake {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 .rating-state-inputs > input,
-.input-person{
+.input-person {
   width: 50px;
   height: 50px;
   margin: 0 15px;
 }
-.rating-state-inputs > input{
+.rating-state-inputs > input {
   display: block;
   opacity: 0;
   cursor: pointer;
 }
 
-.input-person{
+.input-person {
   background-color: #fff;
   border-radius: 50%;
   pointer-events: none;
@@ -33,12 +33,24 @@
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: rgb(36, 47, 58);
-  transition: background .4s ease-in-out;
+  transition: background 0.4s ease-in-out;
 }
 
-.rating-state-inputs > input:checked ~ .input-person{
+.rating-state-inputs > input:checked ~ .input-person {
   background-color: rgb(149, 158, 172);
 }
-.rating-state-inputs > input:hover ~ .input-person{
+.rating-state-inputs > input:hover ~ .input-person {
   background-color: rgb(251, 116, 19);
+}
+
+@media screen and (max-width: 500px) {
+  .rating-state-inputs > input,
+  .input-person {
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+  }
+  .input-person {
+    line-height: 42px;
+  }
 }

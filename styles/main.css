@@ -45,7 +45,7 @@ body{
   letter-spacing: 3px;
   cursor: pointer;
   border: none;
-  transition: color, background .4s ease-in-out;
+  transition: background .4s ease-in-out;
 }
 .submit-button:hover{
   background-color: rgb(255, 255, 255);
@@ -54,4 +54,51 @@ body{
 .submit-button:active{
   background-color: rgb(251, 116, 19);
   color: rgb(255, 255, 255);
+}
+
+.attribution{
+  color: white;
+  position: absolute;
+  text-align: center;
+  bottom: 10%;
+  max-width: 100%;
+  width: 100%;
+}
+.attribution a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: relative;
+}
+.attribution a::after{
+  content: '';
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50%;
+  height: 2px;
+  background-color: rgb(251, 116, 19);
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+.attribution a:hover::after{
+  width: 90%;
+  background-color: rgb(175, 77, 6);
+}
+
+@media screen and (max-width: 500px) {
+  .rating-state-star{
+    background-color: rgb(27, 34, 44);
+    max-width: 90%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translate(0);
+    position: relative;
+  }
+  .attribution a::after{
+    display: none;
+  }
 }
