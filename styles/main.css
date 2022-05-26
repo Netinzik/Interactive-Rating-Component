@@ -94,13 +94,18 @@ body{
   .rating-state-star{
     background-color: rgb(27, 34, 44);
     max-width: 90%;
-    top: 0;
+    top: 20vh;
     left: 0;
     margin: 0 auto;
     transform: translate(0);
     position: relative;
   }
+  .attribution{
+    padding: 0 80px;
+    line-height: 30px;
+    bottom: 5%;
+  }
   .attribution a::after{
-    display: none;
+    width: 100%;
   }
 }

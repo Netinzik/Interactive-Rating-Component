@@ -48,11 +48,8 @@
 @media screen and (max-width: 500px) {
   .rating-state-inputs > input,
   .input-person {
-    width: 40px;
-    height: 40px;
-    margin: 0 2px;
-  }
-  .input-person {
-    line-height: 42px;
+    width: 48px;
+    height: 48px;
+    margin: 0 1.5vw;
   }
 }
