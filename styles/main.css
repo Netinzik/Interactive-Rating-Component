@@ -47,7 +47,8 @@ body{
   letter-spacing: 3px;
   cursor: pointer;
   border: none;
-  transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out,
+              color .4s ease-in-out;
 }
 .submit-button:hover{
   background-color: rgb(255, 255, 255);
